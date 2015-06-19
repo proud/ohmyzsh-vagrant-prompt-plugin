@@ -1,14 +1,6 @@
-This plugin prompts the status of the Vagrant VMs.
+This plugin prompts the status of the Vagrant VMs. It supports single-host and
+multi-host configurations as well.
 
-It makes use of some custom variables. This is the list, initialized with
-some sane defaults:
+Look inside the source for documentation about custom variables. 
 
-```zsh
-# vagrant theming
-ZSH_THEME_VAGRANT_PROMPT_PREFIX="%{$fg_bold[blue]%}["
-ZSH_THEME_VAGRANT_PROMPT_SUFFIX="%{$fg_bold[blue]%}]%{$reset_color%} "
-ZSH_THEME_VAGRANT_PROMPT_RUNNING="%{$fg_no_bold[green]%}✔"
-ZSH_THEME_VAGRANT_PROMPT_POWEROFF="%{$fg_no_bold[red]%}✗"
-ZSH_THEME_VAGRANT_PROMPT_SUSPENDED="%{$fg_no_bold[yellow]%}✗"
-ZSH_THEME_VAGRANT_PROMPT_NOT_CREATED="%{$fg_no_bold[white]%}_"
-```
+Alberto Re <alberto.re@gmail.com>
