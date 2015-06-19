@@ -5,8 +5,8 @@
 #
 # PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(vagrant_prompt_info)$(svn_prompt_info)$(git_prompt_info)%(!.#.$) '
 #
-# You must also define some new theme variables. It makes use of some custom
-# variables. This is the list with some default values:
+# It makes use of some custom variables. This is the list with some default
+# values:
 #
 # ZSH_THEME_VAGRANT_PROMPT_PREFIX="%{$fg_bold[blue]%}["
 # ZSH_THEME_VAGRANT_PROMPT_SUFFIX="%{$fg_bold[blue]%}]%{$reset_color%} "
