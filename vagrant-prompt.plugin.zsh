@@ -5,15 +5,15 @@
 #
 # PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(vagrant_prompt_info)$(svn_prompt_info)$(git_prompt_info)%(!.#.$) '
 #
-# It makes use of some custom variables. This is the list with some default
-# values:
+# `vagrant_prompt_info` makes use of some custom variables. This is an example
+# definition:
 #
 # ZSH_THEME_VAGRANT_PROMPT_PREFIX="%{$fg_bold[blue]%}["
 # ZSH_THEME_VAGRANT_PROMPT_SUFFIX="%{$fg_bold[blue]%}]%{$reset_color%} "
-# ZSH_THEME_VAGRANT_PROMPT_RUNNING="%{$fg_no_bold[green]%}✔"
-# ZSH_THEME_VAGRANT_PROMPT_POWEROFF="%{$fg_no_bold[red]%}✗"
-# ZSH_THEME_VAGRANT_PROMPT_SUSPENDED="%{$fg_no_bold[yellow]%}✗"
-# ZSH_THEME_VAGRANT_PROMPT_NOT_CREATED="%{$fg_no_bold[white]%}_"
+# ZSH_THEME_VAGRANT_PROMPT_RUNNING="%{$fg_no_bold[green]%}●"
+# ZSH_THEME_VAGRANT_PROMPT_POWEROFF="%{$fg_no_bold[red]%}●"
+# ZSH_THEME_VAGRANT_PROMPT_SUSPENDED="%{$fg_no_bold[yellow]%}●"
+# ZSH_THEME_VAGRANT_PROMPT_NOT_CREATED="%{$fg_no_bold[white]%}○"
 
 function vagrant_prompt_info() {
   test -d .vagrant && test -f Vagrantfile
